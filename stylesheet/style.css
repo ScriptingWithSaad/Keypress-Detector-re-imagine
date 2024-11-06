@@ -1,0 +1,96 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #1e1e2e, #2d2d44);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+
+        .container {
+            text-align: center;
+            padding: 2rem;
+            width: 90%;
+            max-width: 800px;
+        }
+
+        .initial-text {
+            font-size: 1.5rem;
+            color: #a0a0a0;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            border: 2px dashed #4a4a5e;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .key-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .key-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .key-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .key-label {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #a0a0a0;
+            margin-bottom: 0.5rem;
+        }
+
+        .key-value {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #fff;
+            word-break: break-word;
+        }
+
+        .history {
+            margin-top: 2rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            text-align: left;
+        }
+
+        .history h3 {
+            color: #a0a0a0;
+            margin-bottom: 0.5rem;
+        }
+
+        .history-list {
+            font-size: 0.9rem;
+            color: #d0d0d0;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .key-card {
+            animation: fadeIn 0.3s ease forwards;
+        }
+    
